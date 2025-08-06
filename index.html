@@ -4,47 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт на GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-        }
-        main {
-            padding: 40px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        Добро пожаловать на мой сайт!
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Обо мне</a>
+            <a href="#">Контакты</a>
+        </nav>
     </header>
+
     <main>
-        <h1>Привет, мир!</h1>
-        <p>Этот сайт хостится на <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+        <h2>Привет, мир!</h2>
+        <p>Этот сайт сделан с помощью <strong>GitHub Pages</strong>.</p>
+        <img src="https://placekitten.com/400/300" alt="Котик">
+        <p>Нажми на кнопку ниже:</p>
+        <button onclick="alert('Спасибо, что нажал кнопку!')">Нажми меня</button>
     </main>
+
     <footer>
-        © 2025 Мой сайт
+        © 2025 Мой сайт | Сделано с ❤
     </footer>
 </body>
 </html>
