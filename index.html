@@ -1,13 +1,135 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой красивый сайт</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Менің сайтым</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideIn 1.5s ease;
+    }
+
+    .image-card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .image-card div {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 280px;
+    }
+
+    .image-card div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+    }
+
+    .image-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .image-card p {
+      padding: 15px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    /* Анимации */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Адаптивность */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1 class="fade-in">Добро пожаловать на мой сайт!</h1>
-        <nav>
-            <a href="#home">Главная</a>
+
+  <header>
+    <h1>Менің керемет сайтым</h1>
+    <p>Бұл жерде мен өзім туралы, жобаларым туралы айтамын</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Менің жобаларым</h2>
+    <div class="image-card">
+      <div>
+        <img src="https://via.placeholder.com/400x250" alt="Project 1">
+        <p>Жоба 1 – Бұл менің алғашқы жобам.</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/400x250" alt="Project 2">
+        <p>Жоба 2 – Бұл сайт HTML, CSS арқылы жасалған.</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/400x250" alt="Project 3">
+        <p>Жоба 3 – Анимациялар мен эффектілер қосылды.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Менің атым. Барлық құқықтар қорғалған.
+  </footer>
+
+</body>
+</html>
