@@ -1,135 +1,74 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Менің сайтым</title>
+  <title>1 Герой | 2 Злодей | 3 Стенды</title>
   <style>
-    * {
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #000000, #222);
+      color: white;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: #f0f0f0;
-      color: #333;
-      line-height: 1.6;
-      scroll-behavior: smooth;
     }
 
     header {
-      background: linear-gradient(45deg, #6a11cb, #2575fc);
-      color: white;
-      padding: 60px 20px;
       text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2em;
+      padding: 30px;
+      background-color: #111;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      animation: slideIn 1.5s ease;
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #1c1c1c;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00ffff44;
+      animation: fadeIn 1s ease;
     }
 
-    .image-card {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 30px;
+    section h2 {
+      color: #00ffff;
+      font-size: 24px;
     }
 
-    .image-card div {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      width: 280px;
+    section p {
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    .image-card div:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 30px rgba(0,0,0,0.2);
-    }
-
-    .image-card img {
-      width: 100%;
-      display: block;
-    }
-
-    .image-card p {
-      padding: 15px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #222;
-      color: #fff;
-      font-size: 14px;
-    }
-
-    /* Анимации */
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateX(-30px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-
-    /* Адаптивность */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2em;
-      }
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>jojo's wiki</h1>
-    <p>Бұл жерде мен өзім туралы, жобаларым туралы айтамын</p>
-  </header>
+  <header>Герой | Злодей | Стенды</header>
 
-  <section>
-    <h2 style="text-align:center;">Менің жобаларым</h2>
-    <div class="image-card">
-      <div>
-        <img src="https://via.placeholder.com/400x250" alt="Project 1">
-        <p>Жоба 1 – Бұл менің алғашқы жобам.</p>
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/400x250" alt="Project 2">
-        <p>Жоба 2 – Бұл сайт HTML, CSS арқылы жасалған.</p>
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/400x250" alt="Project 3">
-        <p>Жоба 3 – Анимациялар мен эффектілер қосылды.</p>
-      </div>
-    </div>
+  <section id="hero">
+    <h2>1. ГЕРОЙ</h2>
+    <p>Имя: <strong>Арес Темный</strong></p>
+    <p>Описание: Храбрый воин, владеющий силой света и тьмы. Защищает мир от разрушения.</p>
   </section>
 
-  <footer>
-    &copy; 2025 Менің атым. Барлық құқықтар қорғалған.
-  </footer>
+  <section id="villain">
+    <h2>2. ЗЛОДЕЙ</h2>
+    <p>Имя: <strong>Некрос</strong></p>
+    <p>Описание: Могущественный маг, стремящийся уничтожить баланс и захватить все реальности.</p>
+  </section>
+
+  <section id="stands">
+    <h2>3. СТЕНДЫ</h2>
+    <p><strong>Стенд Героя:</strong> «Свет Судьбы» — управляет светом, лечит союзников, ослепляет врагов.</p>
+    <p><strong>Стенд Злодея:</strong> «Песнь Боли» — управляет страхами, может создавать иллюзии и разрушения.</p>
+  </section>
 
 </body>
 </html>
