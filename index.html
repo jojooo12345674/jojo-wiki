@@ -2,220 +2,54 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Герой vs Злодей | Стенды</title>
+  <title>JoJo’s Bizarre Adventure - Герои и Злодеи</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      margin: 0; background: #111; color: #eee;
+      font-family: Arial, sans-serif;
     }
-
-    header {
-      text-align: center;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      font-size: 32px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    section {
-      background: rgba(0, 0, 0, 0.7);
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 900px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #00ffff88;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    section h2 {
-      color: #00ffff;
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    section p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-
+    header { text-align: center; padding: 20px; font-size: 2em; background: #222; }
+    section { max-width: 800px; margin: 20px auto; background: #222; padding: 20px; border-radius: 8px; }
+    img { width: 100%; max-height: 300px; object-fit: contain; border-radius: 5px; margin-top: 10px; }
+    h2 { color: #f39c12; }
     button {
-      background-color: #00ffff;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 15px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
+      background: #f39c12; color: #222; border: none; padding: 10px 15px;
+      margin-top: 10px; border-radius: 5px; cursor: pointer;
     }
-
-    button:hover {
-      background-color: #00cccc;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    button:hover { background: #d35400; }
   </style>
 </head>
 <body>
+  <header>JoJo’s Bizarre Adventure — Персонажи и Стенды</header>
 
-  <!-- Фоновая музыка -->
-  <audio autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-epic.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает аудио.
-  </audio>
-
-  <header>Герой vs Злодей | Стенды</header>
-
-  <section id="hero">
-    <h2>1. ГЕРОЙ — Арес Темный</h2>
-    <p>Храбрый воин, владеющий силой света и тьмы. Его миссия — защищать равновесие между мирами.</p>
-    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa" alt="Герой">
-    <button onclick="alert('Арес Темный — мастер меча и света, его стенд лечит союзников и поражает врагов.');">
-      Подробнее о герое
-    </button>
+  <section>
+    <h2>Герои</h2>
+    <strong>Jotaro Kujo</strong><br/>
+    Стенд: Star Platinum – невероятная сила, точность, способность останавливать время.  [oai_citation:0‡Википедия](https://en.wikipedia.org/wiki/Jotaro_Kujo?utm_source=chatgpt.com)<br/>
+    <img src="https://via.placeholder.com/600x300?text=Star+Platinum" alt="Star Platinum">
+    <button onclick="alert('Star Platinum: сила, скорость, точность, остановка времени')">Подробнее</button>
   </section>
 
-  <section id="villain">
-    <h2>2. ЗЛОДЕЙ — Некрос</h2>
-    <p>Темный маг, управляющий страхами. Его цель — уничтожить порядок и захватить все реальности.</p>
-    <img src="https://images.unsplash.com/photo-1610563166155-c599a6e4fa78" alt="Злодей">
-    <button onclick="alert('Некрос использует тьму и иллюзии, его стенд поглощает энергию других.');">
-      Подробнее о злодее
-    </button>
+  <section>
+    <strong>Jolyne Cujoh</strong><br/>
+    Стенд: Stone Free – способность превращать своё тело в нити.  [oai_citation:1‡Википедия](https://en.wikipedia.org/wiki/Jolyne_Cujoh?utm_source=chatgpt.com)<br/>
+    <img src="https://via.placeholder.com/600x300?text=Stone+Free" alt="Stone Free">
+    <button onclick="alert('Stone Free: превращение тела в нити')">Подробнее</button>
   </section>
 
-  <section id="stands">
-    <h2>3. СТЕНДЫ</h2>
-    <p><strong>Стенд Героя:</strong> «Свет Судьбы» — управляет светом, лечит, ослепляет врагов.</p>
-    <p><strong>Стенд Злодея:</strong> «Песнь Боли» — поглощает энергию, создаёт кошмары и хаос.</p>
-    <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="Стенды">
+  <section>
+    <h2>Злодеи</h2>
+    <strong>Dio Brando</strong><br/>
+    Стенд: The World – сверхсила, время.  [oai_citation:2‡Википедия](https://en.wikipedia.org/wiki/Dio_Brando?utm_source=chatgpt.com) [oai_citation:3‡JoJo Wiki](https://jojowiki.com/List_of_Stands?utm_source=chatgpt.com)<br/>
+    <img src="https://via.placeholder.com/600x300?text=The+World" alt="The World">
+    <button onclick="alert('The World: сверхсила и остановка времени')">Подробнее</button>
   </section>
 
-</body>
-</html><!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Герой vs Злодей | Стенды</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('https://images.unsplash.com/photo-1502086223501-7ea6ecd79368') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.8);
-      font-size: 32px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-
-    section {
-      background: rgba(0, 0, 0, 0.7);
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 900px;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #00ffff88;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    section h2 {
-      color: #00ffff;
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    section p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-top: 15px;
-    }
-
-    button {
-      background-color: #00ffff;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      margin-top: 15px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #00cccc;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Фоновая музыка -->
-  <audio autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-epic.mp3" type="audio/mpeg">
-    Ваш браузер не поддерживает аудио.
-  </audio>
-
-  <header>Герой vs Злодей | Стенды</header>
-
-  <section id="hero">
-    <h2>1. ГЕРОЙ — Арес Темный</h2>
-    <p>Храбрый воин, владеющий силой света и тьмы. Его миссия — защищать равновесие между мирами.</p>
-    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa" alt="Герой">
-    <button onclick="alert('Арес Темный — мастер меча и света, его стенд лечит союзников и поражает врагов.');">
-      Подробнее о герое
-    </button>
+  <section>
+    <h2>Другие персонажи</h2>
+    <strong>Johnny Joestar</strong> – Стенд: Tusk, способности зависят от акта (ACTS).  [oai_citation:4‡Википедия](https://en.wikipedia.org/wiki/Steel_Ball_Run?utm_source=chatgpt.com)<br/>
+    <img src="https://via.placeholder.com/600x300?text=Tusk" alt="Tusk">
+    <button onclick="alert('Tusk: различные формы с разной силой')">Подробнее</button>
   </section>
-
-  <section id="villain">
-    <h2>2. ЗЛОДЕЙ — Некрос</h2>
-    <p>Темный маг, управляющий страхами. Его цель — уничтожить порядок и захватить все реальности.</p>
-    <img src="https://images.unsplash.com/photo-1610563166155-c599a6e4fa78" alt="Злодей">
-    <button onclick="alert('Некрос использует тьму и иллюзии, его стенд поглощает энергию других.');">
-      Подробнее о злодее
-    </button>
-  </section>
-
-  <section id="stands">
-    <h2>3. СТЕНДЫ</h2>
-    <p><strong>Стенд Героя:</strong> «Свет Судьбы» — управляет светом, лечит, ослепляет врагов.</p>
-    <p><strong>Стенд Злодея:</strong> «Песнь Боли» — поглощает энергию, создаёт кошмары и хаос.</p>
-    <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68" alt="Стенды">
-  </section>
-
 </body>
 </html>
